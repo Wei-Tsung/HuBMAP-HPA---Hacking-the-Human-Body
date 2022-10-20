@@ -30,21 +30,23 @@ This competition uses data from two different consortia, the Human Protein Atlas
 This competition uses a hidden test. When your submitted notebook is scored the actual test data (including a full length sample submission) will be made available to your notebook.
 
 Files
+--
+
 [train/test].csv Metadata for the train/test set. Only the first few rows of the test set are available for download.
 
--id - The image ID.
--organ - The organ that the biopsy sample was taken from.
--data_source - Whether the image was provided by HuBMAP or HPA.
--img_height - The height of the image in pixels.
--img_width - The width of the image in pixels.
--pixel_size - The height/width of a single pixel from this image in micrometers. All HPA images have a pixel size of 0.4 µm. For HuBMAP imagery the pixel size is 0.5 µm for kidney, 0.2290 µm for large intestine, 0.7562 µm for lung, 0.4945 µm for spleen, and 6.263 µm for prostate.
+- id - The image ID.
+- organ - The organ that the biopsy sample was taken from.
+- data_source - Whether the image was provided by HuBMAP or HPA.
+- img_height - The height of the image in pixels.
+- img_width - The width of the image in pixels.
+- pixel_size - The height/width of a single pixel from this image in micrometers. All HPA images have a pixel size of 0.4 µm. For HuBMAP imagery the pixel size is 0.5 µm for kidney, 0.2290 µm for large intestine, 0.7562 µm for lung, 0.4945 µm for spleen, and 6.263 µm for prostate.
 tissue_thickness - The thickness of the biopsy sample in micrometers. All HPA images have a thickness of 4 µm. The HuBMAP samples have tissue slice thicknesses 10 µm for kidney, 8 µm for large intestine, 4 µm for spleen, 5 µm for lung, and 5 µm for prostate.
 rle - The target column. A run length encoded copy of the annotations. Provided for the training set only.
--age - The patient's age in years. Provided for the training set only.
--sex - The sex of the patient. Provided for the training set only.
--sample_submission.csv
+- age - The patient's age in years. Provided for the training set only.
+- sex - The sex of the patient. Provided for the training set only.
+- sample_submission.csv
 
--id - The image ID.
+- id - The image ID.
 rle - A run length encoded mask of the FTUs in the image.
 [train/test]_images/ The images. Expect roughly 550 images in the hidden test set. All HPA images are 3000 x 3000 pixels with a tissue area within the image around 2500 x 2500 pixels. The HuBMAP images range in size from 4500x4500 down to 160x160 pixels. HPA samples were stained with antibodies visualized with 3,3'-diaminobenzidine (DAB) and counterstained with hematoxylin. HuBMAP images were prepared using Periodic acid-Schiff (PAS)/hematoxylin and eosin (H&E) stains. All images used have at least one FTU. All tissue data used in this competition is from healthy donors that pathologists identified as pathologically unremarkable tissue.
 
