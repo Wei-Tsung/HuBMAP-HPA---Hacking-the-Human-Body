@@ -4,6 +4,13 @@ Segment multi-organ functional tissue units
 Result : Bronze Medal
 --
 
+Task
+--
+Semantic Segmentation
+
+Evaluation Metric
+--
+DICE
 
 Background
 --
