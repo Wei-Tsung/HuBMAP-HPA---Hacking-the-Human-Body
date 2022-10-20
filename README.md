@@ -51,4 +51,4 @@ rle - The target column. A run length encoded copy of the annotations. Provided 
 
 <strong>[train/test]_images</strong>/ The images. Expect roughly 550 images in the hidden test set. All HPA images are 3000 x 3000 pixels with a tissue area within the image around 2500 x 2500 pixels. The HuBMAP images range in size from 4500x4500 down to 160x160 pixels. HPA samples were stained with antibodies visualized with 3,3'-diaminobenzidine (DAB) and counterstained with hematoxylin. HuBMAP images were prepared using Periodic acid-Schiff (PAS)/hematoxylin and eosin (H&E) stains. All images used have at least one FTU. All tissue data used in this competition is from healthy donors that pathologists identified as pathologically unremarkable tissue.
 
-train_annotations/ The annotations provided in the format of points that define the boundaries of the polygon masks of the FTUs.
+<strong>train_annotations</strong>/ The annotations provided in the format of points that define the boundaries of the polygon masks of the FTUs.
