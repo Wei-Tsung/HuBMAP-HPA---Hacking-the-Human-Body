@@ -1,6 +1,7 @@
 # HuBMAP-HPA---Hacking-the-Human-Body
 Segment multi-organ functional tissue units
 
+
 Result : Bronze Medal
 --
 
@@ -35,6 +36,15 @@ The goal of this competition is to identify the locations of each functional tis
 This competition uses data from two different consortia, the Human Protein Atlas (HPA) and Human BioMolecular Atlas Program (HuBMAP). The training dataset consists of data from public HPA data, the public test set is a combination of private HPA data and HuBMAP data, and the private test set contains only HuBMAP data. Adapting models to function properly when presented with data that was prepared using a different protocol will be one of the core challenges of this competition. While this is expected to make the problem more difficult, developing models that generalize is a key goal of this endeavor.
 
 This competition uses a hidden test. When your submitted notebook is scored the actual test data (including a full length sample submission) will be made available to your notebook.
+
+-------------------------
+
+1. This competition mainly uses the official HPA annotation data for training. Key points of the algorithm: Due to the different data sources of the test set (from HuBMAP), there is a distribution difference with the training set. In order to minimize the difference between the two data, the training set is preprocessed with a coloring tool in data processing, and different colorings are constructed respectively. candidate set data.
+2. In the model training phase, scale data of different scales to a fixed size, add extreme data transformation and enhancement, and use imagenet's pre-training weights as initial weights to train an end-to-end semantic segmentation model.
+3. The inference phase uses TTA (data augmentation at test time) to integrate models of multiple scales and two architectures, and vote to weight the final prediction results.
+4. Semantic segmentation model used:
+coat-parallel-small、efficientnet-b8-fpn
+
 
 Files
 --
