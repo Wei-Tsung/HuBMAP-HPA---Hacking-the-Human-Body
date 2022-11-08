@@ -1,18 +1,6 @@
 # HuBMAP-HPA---Hacking-the-Human-Body
 Segment multi-organ functional tissue units
 
-
-Result : Bronze Medal
---
-
-Task
---
-Semantic Segmentation
-
-Evaluation Metric
---
-DICE
-
 Background
 --
 
@@ -25,6 +13,19 @@ The Human BioMolecular Atlas Program (HuBMAP) is working to create a Human Refer
 In this competition, you’ll identify and segment functional tissue units (FTUs) across five human organs. You'll build your model using a dataset of tissue section images, with the best submissions segmenting FTUs as accurately as possible.
 
 If successful, you'll help accelerate the world’s understanding of the relationships between cell and tissue organization. With a better idea of the relationship of cells, researchers will have more insight into the function of cells that impact human health. Further, the Human Reference Atlas constructed by HuBMAP will be freely available for use by researchers and pharmaceutical companies alike, potentially improving and prolonging human life.
+
+Result : Bronze Medal
+--
+
+Task
+--
+Semantic Segmentation
+
+Evaluation Metric
+--
+DICE
+
+
 
 Data Description
 --
