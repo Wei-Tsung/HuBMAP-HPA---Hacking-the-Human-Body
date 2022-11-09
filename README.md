@@ -1,6 +1,6 @@
 # HuBMAP-HPA---Hacking-the-Human-Body
 
-Result : Bronze Medal
+Solution Ranking : Bronze Medal
 --
 
 <img src="https://commonfund.nih.gov/sites/default/files/HuBMAPGraphic-v14.png"/>
