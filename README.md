@@ -30,13 +30,13 @@ Methodology
 
 This competition we mainly use the official HPA annotation data for training. 
 
-- 1. Key points of the algorithm: Due to the different data sources of the test set (from HuBMAP), there is a distribution difference/skew between the test set and the training set. In order to minimize the distribution difference between these two datasets, the training set is preprocessed with a coloring tool in data processing, and different colorings are used respectively for constructing multiple pre-processed candidate dataset.
+1. Key points of the algorithm: Due to the different data sources of the test set (from HuBMAP), there is a distribution difference/skew between the test set and the training set. In order to minimize the distribution difference between these two datasets, the training set is preprocessed with a coloring tool in data processing, and different colorings are used respectively for constructing multiple pre-processed candidate dataset.
 
-- 2. In the model training phase, scale image of different scales to a fixed size, add data transformation and enhancement, and use IMAGENET's pre-training weights as initial weights to train an end-to-end semantic segmentation model.
+2. In the model training phase, scale image of different scales to a fixed size, add data transformation and enhancement, and use IMAGENET's pre-training weights as initial weights to train an end-to-end semantic segmentation model.
 
-- 3. The inference phase uses TTA (data augmentation at test time) to ensemble models of multiple scales and two architectures, and vote to weight the final prediction results.
+3. The inference phase uses TTA (data augmentation at test time) to ensemble models of multiple scales and two architectures, and vote to weight the final prediction results.
 
-- 4. Semantic segmentation model used:
+4. Semantic segmentation model used:
 - coat-parallel-small
 - efficientnet-b8-fpn
 
