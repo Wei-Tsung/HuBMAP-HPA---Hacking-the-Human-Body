@@ -1,10 +1,11 @@
 # HuBMAP-HPA---Hacking-the-Human-Body
 
-<img src="https://commonfund.nih.gov/sites/default/files/HuBMAPGraphic-v14.png"/>
-[Learn More About NIH HuBMAP : The Human BioMolecular Atlas Program](https://commonfund.nih.gov/hubmap)
-
 Result : Bronze Medal
 --
+
+<img src="https://commonfund.nih.gov/sites/default/files/HuBMAPGraphic-v14.png"/>
+
+[Learn More About NIH HuBMAP : The Human BioMolecular Atlas Program](https://commonfund.nih.gov/hubmap)
 
 Background
 --
