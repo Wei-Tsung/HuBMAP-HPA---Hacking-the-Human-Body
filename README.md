@@ -28,7 +28,7 @@ DICE
 Methodology
 --
 
-<strong>This competition we mainly use the official HPA annotation data for training.</strong> 
+<strong>This competition we mainly use the official HPA annotation image for training.</strong> 
 
 1. Key points of the algorithm: Due to the different data sources of the test set (from HuBMAP), there is a distribution difference/skew between the test set and the training set. In order to minimize the distribution difference between these two datasets, the training set is preprocessed with a coloring tool in data processing, and different colorings are used respectively for constructing multiple pre-processed candidate dataset.
 
