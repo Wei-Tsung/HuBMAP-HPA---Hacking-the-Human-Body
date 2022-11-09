@@ -34,7 +34,7 @@ This competition we mainly use the official HPA annotation data for training.
 
 2. In the model training phase, scale image of different scales to a fixed size, add data transformation and enhancement, and use IMAGENET's pre-training weights as initial weights to train an end-to-end semantic segmentation model.
 
-3. The inference phase uses TTA (data augmentation at test time) to ensemble models of multiple scales and two architectures, and vote to weight the final prediction results.
+3. The inference phase uses TTA (Test Time Data Augmentation) to ensemble models of multiple scales and two architectures, and vote to weight the final prediction results. Test time augmentation (TTA) is a popular technique in computer vision. TTA aims at boosting the model accuracy by using data augmentation on the inference stage. The idea behind TTA is simple: for each test image, we create multiple versions that are a little different from the original (e.g., cropped or flipped).
 
 4. Semantic segmentation model used:
 - coat-parallel-small
