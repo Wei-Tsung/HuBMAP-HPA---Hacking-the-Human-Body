@@ -1,5 +1,7 @@
 # HuBMAP-HPA---Hacking-the-Human-Body
-Segment multi-organ functional tissue units
+
+<img src="https://commonfund.nih.gov/sites/default/files/HuBMAPGraphic-v14.png"/>
+[Learn More About NIH HuBMAP : The Human BioMolecular Atlas Program](https://commonfund.nih.gov/hubmap)
 
 Result : Bronze Medal
 --
@@ -18,10 +20,10 @@ In this competition, you’ll identify and segment functional tissue units (FTUs
 If successful, you'll help accelerate the world’s understanding of the relationships between cell and tissue organization. With a better idea of the relationship of cells, researchers will have more insight into the function of cells that impact human health. Further, the Human Reference Atlas constructed by HuBMAP will be freely available for use by researchers and pharmaceutical companies alike, potentially improving and prolonging human life.
 
 
-
 Task
 --
-Semantic Segmentation
+Semantic Segmentation : 
+Segment multi-organ functional tissue units
 
 Evaluation Metric
 --
